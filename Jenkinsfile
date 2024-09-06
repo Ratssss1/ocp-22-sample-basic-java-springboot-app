@@ -27,10 +27,7 @@ pipeline {
                 sh 'mvn package'
             }
         }
-                stage('Archiving') {
-            steps {
-                echo 'Archiving JAR File....'
-                archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
+               
             }
         }
     }
