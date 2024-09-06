@@ -3,7 +3,7 @@ pipeline {
         label "java11"
     }
     stages {
-        stage('SCM') {
+        stage('SCMM') {
             steps {
                 echo 'Cloning the Code Repository..'
                 git branch: 'main', url: 'https://github.com/bobbybabu007/ocp-22-sample-basic-java-springboot-app.git'
